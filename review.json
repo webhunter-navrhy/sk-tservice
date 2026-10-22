@@ -1,0 +1,17 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Hero (PC buňka 1, mobil nad buňkou 1): na pozadí je fotka oliver.jpg. Zdroj má jen 772 px a na 1440 px je zvětšený 1,9×. Navíc v ní dominuje anglický titulek „NUCLEAR NOW – An Oliver Stone film“, takže úvod působí jako plakát filmové premiéry, ne jako firma, která zajišťuje konference. Oprava: dát do hero foto-01 Kabiny-Titl (1920×1080) nebo foto-29 Orange (1920×1019). Oliver nechat jen v galerii.",
+    "Opakované fotky (PC buňky 3–7, mobil buňky 3, 7, 9 a 11): ISO kabíny jsou za sebou třikrát (skupina Tlmočenie, sekce ISO kabíny s korálovým rámem, galerie) a stadion a Slovensko–Ukrajina dvakrát. Oprava: v sekci ISO kabíny použít foto-04 DSC00545 nebo foto-01 Kabiny-Titl. Z galerie vyřadit fotky použité u služeb a nahradit je nepoužitými (Devin hotel, SPP, Mich-1, Saff-4, vivi-int).",
+    "Služby a tím: skupiny služeb jsou opravené, jen koncept mixpultu je dál vidět pouze na VU metru v hero. Ve skupinách (PC buňky 2–5) chybí fader nebo barevný pruh, takže tmavý blok je pořád dlouhý a jednotvárný. Oprava: ke každému nadpisu skupiny dát krátký korálovo-oranžový pruh nebo fader ve stylu VU metru. Tím na PC (buňka 8) zabírá jen levou polovinu a vpravo zůstává prázdná plocha. Oprava: pět portrétů roztáhnout na celou šířku kontejneru, nebo vedle nich dát nadpis „Spoznajte náš tím“. Na mobilu (buňka 13) zůstává Radoslav Guardian sám v řádku, pomůže mřížka 3+2."
+  ],
+  "zavazne": [],
+  "silne": [
+    "Všechny tři minulé výtky jsou opravené. Služby už nemají čísla 01–11, jsou ve 4 skupinách s fotkami firmy a střídá se strana fotky. Čipy se specifikacemi (2×200 W EAW, 6000 ANSI lumen, LED stena až 70 m², 400 ks REPLY) zůstaly a všechny mají oporu v briefu.",
+    "Nadpisy h2 jsou psané normálně a verzálky zůstaly jen u labelů a čipů. Korálový pás s nedoloženou „100 % zárukou“ zmizel a normy ISO 20109 / 2603 / 4043 / IEC 60914 jsou jako jeden řádek pod CTA v hero.",
+    "Brand drží: logo T SERVICE je vlevo v bílé hlavičce, korálová a oranžová jsou z tservice.sk a všechny fotky jsou z reálných akcí firmy. U týmu jsou jednotné popisky (jen jména) a portréty na mobilu už nejsou rozmazané.",
+    "Konverze je jasná: telefon je v hlavičce na každé obrazovce, CTA „Vyžiadať cenovú kalkuláciu“ je v hero a v kontaktu je formulář, kontakty pro Bratislavu i Košice a fakturační údaje. QA je bez přetečení na všech 6 šířkách."
+  ],
+  "verdikt": "Opravené kolo splnilo všechny tři výtky a web nemá žádnou závažnou vadu, takže je odeslatelný. Před odesláním se vyplatí vyměnit hero fotku s filmovým titulkem a odstranit opakované fotky ISO kabín.",
+  "_hash": "4e39f6c574e3f7061cc158f98c2364b6789b63eb"
+}

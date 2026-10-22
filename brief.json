@@ -1,0 +1,578 @@
+{
+ "slug": "sk-tservice",
+ "zdroj_url": "https://www.tservice.sk",
+ "firma": "T SERVICE, s.r.o.",
+ "obor": [
+  "umění a fotografie",
+  "technologie a bezpečnost"
+ ],
+ "ico": "35935847",
+ "ares": {
+  "chyba": "ARES HTTP 404"
+ },
+ "kontakty": {
+  "emaily": [
+   "macak.stefan09@gmail.com",
+   "tservice@tservice.sk"
+  ],
+  "telefony": [
+   "+421 903 433 306",
+   "+421 903 433 316",
+   "202200956"
+  ],
+  "adresa": "",
+  "socialni_site": []
+ },
+ "logo": {
+  "soubor": "podklady/logo.png",
+  "zdroj": "https://www.tservice.sk/images/14_05/logo.png",
+  "rozmery": [
+   139,
+   39
+  ]
+ },
+ "barvy": {
+  "css_promenne": {},
+  "z_css": [
+   "#f1556a",
+   "#f4813f",
+   "#7f21e6",
+   "#221155"
+  ],
+  "z_loga": [],
+  "theme_color": "#ffffff",
+  "doporucene": [
+   "#f1556a",
+   "#f4813f"
+  ]
+ },
+ "fotky": [
+  {
+   "soubor": "podklady/foto/foto-01.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/slider-module/Kabiny-Titl.jpg",
+   "sirka": 1920,
+   "vyska": 1080,
+   "alt": "Mikrofóny pre vaše podujatie"
+  },
+  {
+   "soubor": "podklady/foto/foto-02.png",
+   "url": "https://www.tservice.sk/uploads/modules/photo-module/zvukova-technika-min.png",
+   "sirka": 608,
+   "vyska": 1000,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-03.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/clip-1.jpg",
+   "sirka": 559,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-04.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/DSC00545.JPG",
+   "sirka": 559,
+   "vyska": 436,
+   "alt": "ISO kabína"
+  },
+  {
+   "soubor": "podklady/foto/foto-05.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/V4-TATRY.jpg",
+   "sirka": 559,
+   "vyska": 436,
+   "alt": "Konferencia V4"
+  },
+  {
+   "soubor": "podklady/foto/foto-06.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/V4-8.4.2011.jpg",
+   "sirka": 559,
+   "vyska": 436,
+   "alt": "Ozvučenie konferencie"
+  },
+  {
+   "soubor": "podklady/foto/foto-07.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/Deloitte-1.jpg",
+   "sirka": 559,
+   "vyska": 436,
+   "alt": "Ozvučenie kongresu"
+  },
+  {
+   "soubor": "podklady/foto/foto-08.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/ISO-Kabiny.jpg",
+   "sirka": 581,
+   "vyska": 436,
+   "alt": "ISO kabíny"
+  },
+  {
+   "soubor": "podklady/foto/foto-09.png",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/Digital-receiver-p.png",
+   "sirka": 560,
+   "vyska": 436,
+   "alt": "Digitálny tlmočnícky prijímač"
+  },
+  {
+   "soubor": "podklady/foto/foto-10.png",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/obrazouka.png",
+   "sirka": 560,
+   "vyska": 560,
+   "alt": "Obrazovka"
+  },
+  {
+   "soubor": "podklady/foto/foto-11.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/itap.jpg",
+   "sirka": 1214,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-12.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/Devin-hotel.jpg",
+   "sirka": 581,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-13.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/1.jpg",
+   "sirka": 560,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-14.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/1a.jpg",
+   "sirka": 787,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-15.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/Clipboard01.jpg",
+   "sirka": 595,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-16.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/Saff-4.jpg",
+   "sirka": 731,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-17.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/22.jpg",
+   "sirka": 775,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-18.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/SPP.jpg",
+   "sirka": 772,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-19.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/Mich-1.jpg",
+   "sirka": 772,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-20.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/Mich-2.jpg",
+   "sirka": 772,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-21.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/oliver.jpg",
+   "sirka": 772,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-22.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/Orange1.jpg",
+   "sirka": 822,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-23.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/vivi-int.jpg",
+   "sirka": 773,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-24.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/mike-galeria.jpg",
+   "sirka": 581,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-25.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/gallery-module/miniatures/V4-grand-river-hotel.jpg",
+   "sirka": 579,
+   "vyska": 436,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-26.jpg",
+   "url": "https://www.tservice.sk/images/14_01/ozvucenie_konferencii_a_podujati-min.jpg",
+   "sirka": 1920,
+   "vyska": 1080,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-27.jpg",
+   "url": "https://www.tservice.sk/images/14_01/nase_sluzby_pozadie-min.jpg",
+   "sirka": 1920,
+   "vyska": 2000,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-28.jpg",
+   "url": "https://www.tservice.sk/images/19_01/galeria-min_copy.jpg",
+   "sirka": 1920,
+   "vyska": 2000,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-29.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/photo-module/Orange.jpg",
+   "sirka": 1920,
+   "vyska": 1019,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-30.jpg",
+   "url": "https://www.tservice.sk/uploads/modules/photo-module/music-1792286-1920.jpg",
+   "sirka": 1919,
+   "vyska": 600,
+   "alt": ""
+  }
+ ],
+ "fakta": [
+  {
+   "typ": "h2",
+   "text": "Technické zabezpečenie vašich podujatí.\r\n\r\nOzvučenie, obrazovky , tlmočnícka technika, ISO kabíny,  LED stena, hlasovacie zariadenie.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Naše služby",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Komplexné technické zabezpečenie",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "ONLINE TECHNIKA",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Tlmočnícka technika",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Dataprojektory a premietacie plátna",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "LED stena a  obrazovky.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Pódium - nosnosť 500 kg / m štvorcový",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Videotechnika a videoslužby",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Počítače a notebooky",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Hlasovacie zariadenie",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Predaj techniky",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Ozvučenie",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Osvetlenie",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Kontaktujte nás",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Galéria",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Hlasovacie zariadenie",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Akcia Víglaš",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Video záznam",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "ISO kabína s certifikátom",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "ISO kabíny",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Digitálny tlmočnícky prijímač",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Tip pre vaše podujatie",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "65\"  uhlopriečka 164 cm",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Konferencia Itapa",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Kompletná technika - Full servis Hotel Bellevue",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Videokonferencia s tlmočením",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Sheraton hotel",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Baroková záhrada  - hrad",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Napíšte nám",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Spoznajte náš tím",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Štefan Macák",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Ján Kadlečík",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Peter Krušina",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Matej Kubáň",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Radoslav Guardian",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Kontakt",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Zariadenia ktoré poskytujeme zodpovedajú medzinárodným normám ISO 20109, ISO 2603, ISO 4043, IEC 60914",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Charakterizuje nás inovatívny prístup , trvalá orientácia na zákazníka a dôraz na kvalitu služieb, čo potvrdzujú mnohé referencie.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Máme bohaté skúsenosti a poznáme väčšinu konferenčných priestorov. V súčasnosti preferovaný life streaming so záznamom zabezpečujeme pre viaceré renomované firmy. Na základe vašich požiadaviek, vám zašleme cenovú kalkuláciu.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Zabezpečujeme Videokonferencie s online tlmočením. Streaming s HD kamerami a možnosťou mixovania 8 obrazových vstupov. Komunikácia so vzdialeným prezentujúcim cez Zoom, MS Teams alebo podľa želania .",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Pre vaše podujatie môžeme použiť tlmočnícku podľa vašich požiadaviek. Máme pre vás najnovšie ISO kabíny a digitálne tlmočnícke prijímače Taiden, ktoré patria medzi svetovú špičku. Poskytujeme tiež sprievodcovské tlmočnícke UHF zariadenia - šepták, s tlmočníckym  vysielačom do ruky alebo na hlavu.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Používame dataprojektory značky EPSON. Od malých dataprojektorov až po výkon 6000 ansi lumen.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Dotyková obrazovka 55\" LCD Obrazovky s uhlopriečkou 42\"až 65\" . LED stena až 70 metrov štvorcových.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Video sa stalo dôležitým prvkom rôznych podujatí. Umožňuje archiváciu udalosti alebo pripojenie vzdialených účastníkov. Ponúkame videozáznam, live-streaming, online konferencie, záznam z dronu, postprodukciu.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Prenájom notebookov. Ovládanie viacero notebookov jedným prezenterom. Zvukový vstup zo sály do notebooku . Najnovší software a presentery .",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "K dispozícii pre vás máme 400 kusov hlasovacích zariadení značky REPLY.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Predaj a inštalácia tlmočníckej techniky. Špičkové digitálne prijímače TAIDEN. Indikácia stav baterie, hlasitosť, názov jazyka. Predaj UHF prijímačov .",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Poskytujeme podľa druhu akcie tri velkosti reproduktorov. Pre menšie sály ozvučenie 2x200W EAW alebo 6x200W EV a pre väčšie podujatia 4x500W EAW .",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Osvetlenie akcií profesionálnou efektovou technikou. Osvetlenie pódia Osvetlenie stropu Osvetlenie dekorácií premietanie log alebo obrázkov Pohybujúce sa svetlá Osvetlenie odhaľujúce produkt",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Copyright © 2020 T SERVICE, spol. s r.o. Všetky práva vyhradené. Designed by webgaleria.sk",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Táto webová stránka používa súbory cookies. Využívaním cookies nedochádza k spracúvaniu osobných údajov podľa GDPR. Prehliadaním webovej stránky návštevník akceptuje využívanie cookies. Viac informácií o využívaní cookies a možnostiach ich vypnutia nájdete tu . Rozumiem Nesúhlasím",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Uvedené informácie poskytujú návštevníkovi webovej stránky www.tservice.sk (ďalej len\r\n                                „webová stránka“) bližší prehľad o využívaných cookies.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Prevádzkovateľ webovej stránky si prostredníctvom tohto dokumentu a nastavením webovej\r\n                                stránky plní zákonné povinnosti, ktoré mu vyplývajú z § 55 ods. 5 zákona č. 351/2011 Z. z.\r\n                                o elektronických komunikáciách v znení neskorších predpisov.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Na tejto webovej stránke dochádza k využívaniu základných a funkčných cookies, zaisťujú\r\n                                najmä výkon základných funkcií webovej stránky a jej samotné fungovanie. Účelom\r\n                                využívania cookies je aj možnosť uskutočniť analýzu návštevnosti webovej stránky a určiť\r\n                                správanie návštevníka.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Súbory cookies, ktoré sú na webovej stránke používané nepredstavujú spracúvanie\r\n                                osobných údajov podľa Nariadenia Európskeho parlamentu a Rady (EÚ) 2016/679 o ochrane\r\n                                fyzických osôb pri spracúvaní osobných údajov a o voľnom pohybe takýchto údajov.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Cookies predstavujú malé textové súbory, ktoré môžu byť do internetového prehliadača\r\n                                odosielané pri návšteve webových stránok a ukladané do zvoleného zariadenia návštevníka.\r\n                                Ich uloženie sa realizuje do prehliadača návštevníka webovej stránky. Ich význam spočíva\r\n                                v tom, že pri ďalšej návšteve webovej stránky umožní webový prehliadač znovu načítať\r\n                                súbory cookies a tieto informácie odošle späť webovej stránke, ktorá pôvodne cookies\r\n                                vytvorila.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Návštevníkovi je po načítaní webovej stránky oznámené, že táto používa súbory cookies.\r\n                                Prehliadaním webovej stránky návštevník používanie súborov cookies akceptuje a vyjadruje\r\n                                svoje súhlas. Takéto vyjadrenie súhlasu je spĺňa požiadavku udelenia súhlasu\r\n                                prostredníctvom použitia príslušného nastavenia webového prehliadača. Návšteva webovej\r\n                                stránky a poskytnutie informácií o využívaní súborov cookies na webovej stráne bez toho,\r\n                                aby návštevník uskutočnil zmeny vo využívaní cookies v rámci svojho prehliadača, je\r\n                                považované za takéto akceptovanie cookies a vyjadrenie súhlasu s podmienkami ich\r\n                                využívania",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Webová stránka obsahuje a/alebo môže obsahovať aj pluginy jednotlivých sietí tretích\r\n                                subjektov. Pokiaľ na logá nekliknete nebudú prenesené žiadne údaje do sociálnych sietí.\r\n                                Kliknutím na tieto logá akceptujete komunikáciu so servermi sociálnej siete. Bližšie\r\n                                informácie o následnom využívaní cookies poskytujú tieto tretie subjekty osobitne, a to\r\n                                najmä informácie o účeloch využívania cookies, rozsahu údajov zhromažďovaných\r\n                                prostredníctvom týchto sietí tretích subjektov, ako aj informácie o ich ďalšom spracúvaní a\r\n                                využívaní údajov takouto sieťou tretieho subjektu.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Webová stránka využíva cookies potrebné pre zaistenie funkčnosti služieb Google Analytics,\r\n                                ktoré umožňujú získavať štatistické údaje najmä o návštevnosti webovej stránky a správaní\r\n                                návštevníka na webovej stránke. Prostredníctvom služieb Google Analytics nedochádza k spracúvaniu osobných údajov návštevníka webovej stránky. Návštevník môže zamedziť\r\n                                tomu, aby jeho prehliadanie internetových stránok bolo ukladané do analytických súborov\r\n                                cookies. (Google Analytics: https://policies.google.com/privacy?hl=sk ).",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Cookies využívané na webovej stránke nezhromažďujú o návštevníkovi webovej stránky\r\n                                žiadne informácie, ktoré by mali charakter osobných údajov, a ktoré by sa dali využiť v rámci\r\n                                marketingovej činnosti alebo pre využitie behaviorálnej reklamy. Webová stránka nespracúva\r\n                                a nearchivuje IP adresu návštevníka, prípadne ju nespracúva tak, aby bola umožnená\r\n                                identifikácia návštevníka webovej stránky.",
+   "zdroj": "https://www.tservice.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Tieto informácie o využívaní súborov cookies je prevádzkovateľ webovej stránky oprávnený\r\n                                kedykoľvek meniť, a to v súvislosti so zmenami prijatými pri používaní cookies.",
+   "zdroj": "https://www.tservice.sk/"
+  }
+ ],
+ "chybi": [
+  "adresa / provozovna",
+  "potvrzení služeb a ceníku (nic nevymýšlet)"
+ ],
+ "popis_webu": "T SERVICE, spol. s r.o. Ozvučenie vašich akcií, tlmočnicka technika, dataprojektory, videozáznam, obrazovky, hlasovacie zariadenie"
+}

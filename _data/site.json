@@ -1,0 +1,55 @@
+{
+  "slug": "sk-tservice",
+  "nazev": "T SERVICE, s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-tservice/",
+  "base": "/sk-tservice/",
+  "lang": "sk",
+  "popis": "T SERVICE, s.r.o.: technické zabezpečenie konferencií a podujatí – ozvučenie, tlmočnícka technika a ISO kabíny, LED stena, streaming a hlasovacie zariadenie.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "hero.jpg",
+  "logo": "logo.png",
+  "theme_color": "#15161a",
+  "typ": "LocalBusiness",
+  "ico": "35935847",
+  "kontakt": {
+    "email": "tservice@tservice.sk",
+    "telefon": "+421 903 433 306",
+    "adresa": {
+      "ulice": "Višňová 36",
+      "psc": "900 45",
+      "mesto": "Malinovo",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu tservice.sk"
+  },
+  "nav": [
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Tlmočenie",
+      "href": "#tlmocenie"
+    },
+    {
+      "text": "Galéria",
+      "href": "#galeria"
+    },
+    {
+      "text": "Tím",
+      "href": "#tim"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

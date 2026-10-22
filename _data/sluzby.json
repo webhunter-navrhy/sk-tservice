@@ -1,0 +1,120 @@
+[
+ {
+  "nazev": "Ozvučenie",
+  "popis": "Podľa druhu akcie poskytujeme tri veľkosti reproduktorov.",
+  "spec": [
+   "Menšie sály: 2×200 W EAW alebo 6×200 W EV",
+   "Väčšie podujatia: 4×500 W EAW"
+  ],
+  "foto": "ozvucenie.png",
+  "skupina": "zvuk"
+ },
+ {
+  "nazev": "Pódium",
+  "popis": "Variabilné pódium z dosiek 2 × 1 m.",
+  "spec": [
+   "výška 40 cm",
+   "nosnosť 500 kg/m²"
+  ],
+  "foto": "",
+  "skupina": "zvuk"
+ },
+ {
+  "nazev": "Osvetlenie",
+  "popis": "Osvetlenie akcií profesionálnou efektovou technikou.",
+  "spec": [
+   "Osvetlenie pódia",
+   "Osvetlenie stropu",
+   "Osvetlenie dekorácií",
+   "Premietanie log alebo obrázkov",
+   "Pohybujúce sa svetlá",
+   "Osvetlenie odhaľujúce produkt"
+  ],
+  "foto": "",
+  "skupina": "zvuk"
+ },
+ {
+  "nazev": "Tlmočnícka technika",
+  "popis": "Najnovšie ISO kabíny a digitálne tlmočnícke prijímače Taiden, ktoré patria medzi svetovú špičku. Poskytujeme aj sprievodcovské UHF zariadenia – šepták, s vysielačom do ruky alebo na hlavu.",
+  "spec": [
+   "ISO kabíny",
+   "Digitálne prijímače Taiden",
+   "UHF šepták"
+  ],
+  "foto": "",
+  "skupina": "tlmocenie"
+ },
+ {
+  "nazev": "Hlasovacie zariadenie",
+  "popis": "K dispozícii máme 400 kusov hlasovacích zariadení značky REPLY.",
+  "spec": [
+   "400 ks REPLY"
+  ],
+  "foto": "",
+  "skupina": "tlmocenie"
+ },
+ {
+  "nazev": "Online technika",
+  "popis": "Videokonferencie s online tlmočením a streaming s HD kamerami. Vzdialeného prezentujúceho pripojíme cez Zoom, MS Teams alebo podľa želania.",
+  "spec": [
+   "Mixovanie 8 obrazových vstupov",
+   "HD kamery"
+  ],
+  "foto": "",
+  "skupina": "obraz"
+ },
+ {
+  "nazev": "Dataprojektory a plátna",
+  "popis": "Používame dataprojektory značky EPSON, od malých až po výkon 6000 ANSI lumen.",
+  "spec": [
+   "EPSON",
+   "až 6000 ANSI lumen"
+  ],
+  "foto": "",
+  "skupina": "obraz"
+ },
+ {
+  "nazev": "LED stena a obrazovky",
+  "popis": "Dotyková obrazovka aj LCD obrazovky pre sály rôznej veľkosti.",
+  "spec": [
+   "Dotyková obrazovka 55\"",
+   "LCD 42\" až 65\"",
+   "LED stena až 70 m²"
+  ],
+  "foto": "",
+  "skupina": "obraz"
+ },
+ {
+  "nazev": "Videotechnika a videoslužby",
+  "popis": "Video umožňuje archiváciu udalosti alebo pripojenie vzdialených účastníkov.",
+  "spec": [
+   "Videozáznam",
+   "Live-streaming",
+   "Online konferencie",
+   "Záznam z dronu",
+   "Postprodukcia"
+  ],
+  "foto": "",
+  "skupina": "obraz"
+ },
+ {
+  "nazev": "Počítače a notebooky",
+  "popis": "Prenájom notebookov a ovládanie viacerých notebookov jedným prezentujúcim.",
+  "spec": [
+   "Zvukový vstup zo sály do notebooku",
+   "Najnovší software a presentery"
+  ],
+  "foto": "",
+  "skupina": "it"
+ },
+ {
+  "nazev": "Predaj techniky",
+  "popis": "Predaj a inštalácia tlmočníckej techniky. Špičkové digitálne prijímače TAIDEN s indikáciou stavu batérie, hlasitosti a názvu jazyka.",
+  "spec": [
+   "Prijímače TAIDEN",
+   "UHF prijímače"
+  ],
+  "foto": "",
+  "skupina": "it"
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "id": "zvuk",
+  "nazev": "Zvuk, svetlo a pódium",
+  "foto": "sala-1.jpg",
+  "alt": "Konferenčná sála s ozvučením a účastníkmi"
+ },
+ {
+  "id": "tlmocenie",
+  "nazev": "Tlmočenie a hlasovanie",
+  "foto": "iso-kabiny.jpg",
+  "alt": "ISO tlmočnícke kabíny v konferenčnej sále"
+ },
+ {
+  "id": "obraz",
+  "nazev": "Obraz, LED a video",
+  "foto": "led-stena.jpg",
+  "alt": "LED stena a diskusný panel na konferencii"
+ },
+ {
+  "id": "it",
+  "nazev": "Počítače a predaj techniky",
+  "foto": "mikrofon.jpg",
+  "alt": "Konferenčné mikrofóny na stole"
+ }
+]
