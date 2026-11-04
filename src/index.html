@@ -40,7 +40,7 @@
           <h3>{{ g.nazev }}</h3>
           <ul class="sl" role="list">
             {% for s in data.sluzby if s.skupina == g.id %}
-            <li><h4>{{ s.nazev }}</h4><p>{{ s.popis }}</p>{% if s.spec %}<ul class="spec" role="list">{% for x in s.spec %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}</li>
+            <li><h4>{{ s.nazev }}</h4><p>{{ s.popis }}</p>{% if s.get('foto') %}<div class="prod">{{ img(s.foto, s.get('alt',''), sizes='160px') }}{% if s.get('logo') %}{{ img(s.logo, 'EAW – Eastern Acoustic Works', sizes='90px') }}{% endif %}</div>{% endif %}{% if s.spec %}<ul class="spec" role="list">{% for x in s.spec %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}</li>
             {% endfor %}
           </ul>
         </div>
@@ -100,7 +100,7 @@
     <div class="adresy">
       <h3>Zastúpenie Bratislava</h3>
       <p>T SERVICE, spol. s r.o.<br>Višňová 36<br>900 45 Malinovo<br><a href="tel:+421903433306">+421 903 433 306</a><br><a href="mailto:tservice@tservice.sk">tservice@tservice.sk</a></p>
-      <h3>Zastúpenie Košice</h3>
+      <h3>Technik Košice</h3>
       <p><a href="tel:+421903433316">+421 903 433 316</a><br><a href="mailto:tservice@tservice.sk">tservice@tservice.sk</a></p>
       <h3>Fakturačné údaje</h3>
       <p>T SERVICE s.r.o.<br>Jozefa Hagaru 21<br>831 54 Bratislava<br>IČO 35935847<br>IČ DPH: SK 2022009561</p>

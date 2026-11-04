@@ -85,3 +85,7 @@ h1{font-size:clamp(2.6rem,7vw,5.2rem)}h2{font-size:clamp(2.1rem,4.6vw,3.4rem)}h3
 .sl h4{font:700 1.25rem 'Barlow Condensed',sans-serif;letter-spacing:.03em;margin:0 0 .3rem}.sl p{margin:0;color:#c9cad1}
 .sl .spec{grid-column:auto;margin:.6rem 0 0}
 @media(min-width:60rem){.skupina{grid-template-columns:5fr 6fr}.skupina.obracene .sk-foto{order:2}.skupina.obracene{grid-template-columns:6fr 5fr}.sk-foto{position:sticky;top:6rem}}
+.prod{display:flex;align-items:center;gap:1rem;margin:.75rem 0}
+.prod img{background:#fff;border-radius:6px;padding:.25rem;height:auto;width:130px;object-fit:contain}
+.prod img+img{width:70px}
+.skupina:nth-of-type(4) .sk-foto img{object-fit:contain;background:#fff}

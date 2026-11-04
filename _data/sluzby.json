@@ -6,8 +6,10 @@
    "Menšie sály: 2×200 W EAW alebo 6×200 W EV",
    "Väčšie podujatia: 4×500 W EAW"
   ],
-  "foto": "ozvucenie.png",
-  "skupina": "zvuk"
+  "foto": "eaw.jpg",
+  "skupina": "zvuk",
+  "logo": "eaw-logo.jpg",
+  "alt": "Reproduktor EAW"
  },
  {
   "nazev": "Pódium",
@@ -95,6 +97,14 @@
    "Postprodukcia"
   ],
   "foto": "",
+  "skupina": "obraz"
+ },
+ {
+  "nazev": "Video rečníka pri okrúhlom stole",
+  "popis": "Automatické zameriavanie na aktuálneho rečníka pri okrúhlom stole počas konferencií.",
+  "spec": [],
+  "foto": "kamera.jpg",
+  "alt": "HD kamera Taiden",
   "skupina": "obraz"
  },
  {
