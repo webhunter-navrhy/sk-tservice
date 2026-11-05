@@ -89,3 +89,7 @@ h1{font-size:clamp(2.6rem,7vw,5.2rem)}h2{font-size:clamp(2.1rem,4.6vw,3.4rem)}h3
 .prod img{background:#fff;border-radius:6px;padding:.25rem;height:auto;width:130px;object-fit:contain}
 .prod img+img{width:70px}
 .skupina:nth-of-type(4) .sk-foto img{object-fit:contain;background:#fff}
+.tmava .adresy p,.tmava .formular label,.tmava .normy,.tmava .sl p,.tmava .skupina p,.tmava p{color:#15161a}
+.tmava .formular label span,.tmava .formular input::placeholder,.tmava .formular textarea::placeholder{color:#4a3a00}
+.tmava .formular label:has(input[type=checkbox]){color:#15161a}
+.tmava li,.tmava .sl li{border-color:#15161a;color:#15161a}
