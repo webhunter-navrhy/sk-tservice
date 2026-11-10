@@ -93,3 +93,6 @@ h1{font-size:clamp(2.6rem,7vw,5.2rem)}h2{font-size:clamp(2.1rem,4.6vw,3.4rem)}h3
 .tmava .formular label span,.tmava .formular input::placeholder,.tmava .formular textarea::placeholder{color:#4a3a00}
 .tmava .formular label:has(input[type=checkbox]){color:#15161a}
 .tmava li,.tmava .sl li{border-color:#15161a;color:#15161a}
+
+.tlmocenie .foto-stack{box-shadow:none;background:#fff;text-align:center}.tlmocenie .foto-stack img{aspect-ratio:auto;object-fit:contain;max-width:24rem;width:100%;height:auto;margin:0 auto}
+.pult.tmava{background:#fff;color:#15161a}
