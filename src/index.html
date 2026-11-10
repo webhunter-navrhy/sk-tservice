@@ -2,36 +2,40 @@
 {% set titulek = 'T SERVICE – technické zabezpečenie konferencií a podujatí, Bratislava' %}
 {% set cesta = '' %}
 {% block obsah %}
+{% set T = data.texty %}
 <section class="hero" id="uvod">
-  <div class="hero-foto">{{ img('hero.jpg', 'Veľká sála s LED stenou a diskusným panelom, technika T SERVICE', sizes='100vw') }}</div>
-  <div class="wrap hero-obsah">
-    <p class="stitok">Konferencie · podujatia · tlmočenie</p>
-    <h1>Technické zabezpečenie vašich podujatí.</h1>
-    <p class="perex">Ozvučenie, obrazovky, tlmočnícka technika, ISO kabíny, LED stena, hlasovacie zariadenie.</p>
-    <p class="hero-cta"><a class="tlacitko" href="#kontakt">Vyžiadať cenovú kalkuláciu</a><a class="odkaz-svetly" href="#sluzby">Čo vám zabezpečíme</a></p>
-    <p class="normy">Zariadenia zodpovedajú normám ISO 20109, ISO 2603, ISO 4043 a IEC 60914.</p>
-    <div class="meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap hero-mriezka">
+    <div class="hero-obsah">
+      <p class="stitok">{{ T.hero.stitok }}</p>
+      <h1>{{ T.hero.nadpis }}</h1>
+      {% if T.hero.slogan %}<p class="slogan">{{ T.hero.slogan|nbsp }}</p>{% endif %}
+      <p class="perex">{{ T.hero.perex|nbsp }}</p>
+      <p class="hero-cta"><a class="tlacitko" href="#kontakt">{{ T.hero.tlacitko }}</a><a class="odkaz-svetly" href="#sluzby">{{ T.hero.tlacitko2 }}</a></p>
+      {% if T.hero.normy %}<p class="normy">{{ T.hero.normy }}</p>{% endif %}
+    </div>
+    <div class="hero-foto">{{ img(T.hero.foto, T.hero.alt, sizes='(min-width: 60rem) 34rem, 100vw') }}
+      <div class="meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
   </div>
 </section>
 
 <section class="sekce o-nas" id="o-nas">
   <div class="wrap dva">
     <div>
-      <p class="stitok">O nás</p>
-      <h2>Poznáme väčšinu konferenčných priestorov.</h2>
+      <p class="stitok">{{ T.o_nas.stitok }}</p>
+      <h2>{{ T.o_nas.nadpis }}</h2>
     </div>
     <div class="text">
-      <p>Máme bohaté skúsenosti a poznáme väčšinu konferenčných priestorov. V súčasnosti preferovaný live streaming so záznamom zabezpečujeme pre viaceré renomované firmy.</p>
-      <p>Charakterizuje nás inovatívny prístup, trvalá orientácia na zákazníka a dôraz na kvalitu služieb, čo potvrdzujú mnohé referencie.</p>
-      <p><strong>Na základe vašich požiadaviek vám zašleme cenovú kalkuláciu.</strong></p>
+      {% for o in T.o_nas.odstavce if o %}<p>{{ o }}</p>
+      {% endfor %}{% if T.o_nas.zaver %}<p><strong>{{ T.o_nas.zaver }}</strong></p>{% endif %}
     </div>
   </div>
 </section>
 
 <section class="sekce tmava pult" id="sluzby">
   <div class="wrap">
-    <p class="stitok">Naše služby</p>
-    <h2>Komplexné technické zabezpečenie</h2>
+    <p class="stitok">{{ T.sluzby.stitok }}</p>
+    <h2>{{ T.sluzby.nadpis }}</h2>
     <div class="skupiny">
       {% for g in data.skupiny %}
       <article class="skupina{% if loop.index is even %} obracene{% endif %}">
@@ -40,7 +44,7 @@
           <h3>{{ g.nazev }}</h3>
           <ul class="sl" role="list">
             {% for s in data.sluzby if s.skupina == g.id %}
-            <li><h4>{{ s.nazev }}</h4><p>{{ s.popis }}</p>{% if s.get('foto') %}<div class="prod">{{ img(s.foto, s.get('alt',''), sizes='160px') }}{% if s.get('logo') %}{{ img(s.logo, 'EAW – Eastern Acoustic Works', sizes='90px') }}{% endif %}</div>{% endif %}{% if s.spec %}<ul class="spec" role="list">{% for x in s.spec %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}</li>
+            <li><h4>{{ s.nazev }}</h4><p>{{ s.popis }}</p>{% if s.get('foto') %}<div class="prod">{{ img(s.foto, s.get('alt') or s.nazev, sizes='160px') }}{% if s.get('logo') %}{{ img(s.logo, 'EAW – Eastern Acoustic Works', sizes='90px') }}{% endif %}</div>{% endif %}{% if s.get('spec') %}<ul class="spec" role="list">{% for x in s.spec %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}</li>
             {% endfor %}
           </ul>
         </div>
@@ -53,24 +57,24 @@
 <section class="sekce tlmocenie" id="tlmocenie">
   <div class="wrap dva">
     <div class="foto-stack">
-      {{ img('prijimac-taiden.jpg', 'Digitálny tlmočnícky prijímač Taiden', sizes='(min-width: 60rem) 24rem, 80vw') }}
+      {{ img(T.tlmocenie.foto, T.tlmocenie.alt, sizes='(min-width: 60rem) 24rem, 80vw') }}
     </div>
     <div class="text">
-      <p class="stitok">Tlmočnícka technika</p>
-      <h2>ISO kabíny a digitálne prijímače Taiden</h2>
-      <p>Pre vaše podujatie môžeme použiť tlmočnícku techniku podľa vašich požiadaviek. Máme najnovšie ISO kabíny a digitálne tlmočnícke prijímače Taiden, ktoré patria medzi svetovú špičku.</p>
-      <p>Poskytujeme aj sprievodcovské tlmočnícke UHF zariadenia – šepták, s tlmočníckym vysielačom do ruky alebo na hlavu.</p>
+      <p class="stitok">{{ T.tlmocenie.stitok }}</p>
+      <h2>{{ T.tlmocenie.nadpis }}</h2>
+      {% for o in T.tlmocenie.odstavce if o %}<p>{{ o }}</p>
+      {% endfor %}
     </div>
   </div>
 </section>
 
 <section class="sekce galeria" id="galeria">
   <div class="wrap">
-    <p class="stitok">Galéria</p>
-    <h2>Z podujatí, ktoré sme zabezpečovali</h2>
+    <p class="stitok">{{ T.galeria.stitok }}</p>
+    <h2>{{ T.galeria.nadpis }}</h2>
     <ul class="mriezka" role="list">
-      {% for g in data.galeria %}
-      <li>{{ img(g.foto, g.alt, sizes='(min-width: 60rem) 33vw, (min-width: 36rem) 50vw, 100vw') }}{% if g.popis %}<span>{{ g.popis }}</span>{% endif %}</li>
+      {% for g in data.galeria if g.foto %}
+      <li>{{ img(g.foto, g.get('alt') or g.get('popis') or 'Podujatie s technikou T SERVICE', sizes='(min-width: 60rem) 33vw, (min-width: 36rem) 50vw, 100vw') }}{% if g.popis %}<span>{{ g.popis }}</span>{% endif %}</li>
       {% endfor %}
     </ul>
   </div>
@@ -78,11 +82,11 @@
 
 <section class="sekce tim" id="tim">
   <div class="wrap">
-    <p class="stitok">Tím</p>
-    <h2>Spoznajte náš tím</h2>
+    <p class="stitok">{{ T.tim.stitok }}</p>
+    <h2>{{ T.tim.nadpis }}</h2>
     <ul class="ludia" role="list">
-      {% for c in data.tim %}
-      <li>{{ img(c.foto, c.meno, sizes='200px') }}<strong>{{ c.meno }}</strong></li>
+      {% for c in data.tim if c.meno %}
+      <li>{% if c.foto %}{{ img(c.foto, c.meno, sizes='200px') }}{% endif %}<strong>{{ c.meno }}</strong>{% if c.get('pozicia') %}<span>{{ c.pozicia }}</span>{% endif %}</li>
       {% endfor %}
     </ul>
   </div>
@@ -91,19 +95,17 @@
 <section class="sekce tmava kontakt" id="kontakt">
   <div class="wrap dva">
     <div class="text">
-      <p class="stitok">Kontakt</p>
-      <h2>Napíšte nám</h2>
-      <p>Cenovú kalkuláciu pripravíme na základe vašich požiadaviek.</p>
+      <p class="stitok">{{ T.kontakt.stitok }}</p>
+      <h2>{{ T.kontakt.nadpis }}</h2>
+      <p>{{ T.kontakt.text }}</p>
       {% include "_formular.html" %}
     </div>
     <div class="adresy">
-      <h3>Zastúpenie Bratislava</h3>
-      <p>T SERVICE, spol. s r.o.<br>Višňová 36<br>900 45 Malinovo<br><a href="tel:+421903433306">+421 903 433 306</a><br><a href="mailto:tservice@tservice.sk">tservice@tservice.sk</a></p>
-      <h3>Technik Košice</h3>
-      <p><a href="tel:+421903433316">+421 903 433 316</a><br><a href="mailto:tservice@tservice.sk">tservice@tservice.sk</a></p>
-      <h3>Fakturačné údaje</h3>
-      <p>T SERVICE s.r.o.<br>Jozefa Hagaru 21<br>831 54 Bratislava<br>IČO 35935847<br>IČ DPH: SK 2022009561</p>
-      <p class="navig"><a href="https://goo.gl/maps/fBU4MZY7JnPTg8dZ7" rel="noopener">Google navigácia</a><a href="http://waze.to/?ll=48.126079,17.091828" rel="noopener">Waze navigácia</a></p>
+      {% for b in T.kontakt.bloky %}
+      <h3>{{ b.nadpis }}</h3>
+      <p>{% for r in b.riadky if r %}{% if r is match_tel %}<a href="tel:{{ r|replace(' ', '') }}">{{ r }}</a>{% elif r is match_mail %}<a href="mailto:{{ r }}">{{ r }}</a>{% else %}{{ r }}{% endif %}{% if not loop.last %}<br>{% endif %}{% endfor %}</p>
+      {% endfor %}
+      <p class="navig">{% if T.kontakt.google %}<a href="{{ T.kontakt.google }}" rel="noopener">Google navigácia</a>{% endif %}{% if T.kontakt.waze %}<a href="{{ T.kontakt.waze }}" rel="noopener">Waze navigácia</a>{% endif %}</p>
     </div>
   </div>
 </section>

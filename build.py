@@ -7,6 +7,10 @@
 Co dělá sám: WebP + srcset 640/1280/1920, lazy u všech fotek kromě první na stránce, ?v=<hash obsahu> u CSS/JS,
 noindex a robots.txt podle site.navrh, JSON-LD LocalBusiness ze site.json, og:image 1200x630, sitemap.xml, 404.html,
 .nojekyll (+ CNAME u ostrého webu s doménou). Design si nedědí: styl a šablony píšeš ty.
+
+T SERVICE (10. 11. 2026): administrace /admin/ (webhunter-admin, id sk-tservice) zapisuje _data/*.json a img/uploads/…,
+build pak spouští GitHub Action (.github/workflows/deploy.yml); version.json nese GITHUB_SHA, podle něj admin pozná
+zveřejnění. Cesty zůstávají absolutní podle site.base (/sk-tservice/ na náhledu).
 """
 import datetime
 import hashlib
@@ -55,6 +59,8 @@ class Obrazky:
         self.pocet = 0
 
     def _zpracuj(self, nazev):
+        if nazev.startswith("img/"):   # fotky z administrace mají cestu img/uploads/…
+            nazev = nazev[4:]
         if nazev in self.info:
             return self.info[nazev]
         zdroj = os.path.join(IMG, nazev)
@@ -180,6 +186,10 @@ def main():
         return base + (cesta + "/" if cesta else "")
 
     env = Environment(loader=FileSystemLoader(SRC), autoescape=select_autoescape(["html"]), undefined=StrictUndefined)
+    # slovenská/česká typografia: jednopísmenová predložka/spojka nesmie ostať na konci riadku
+    env.filters["nbsp"] = lambda v: Markup(re.sub(r"(^|\s)([aiouvszkAIOUVSZK])\s+", lambda m: m.group(1) + m.group(2) + "&nbsp;", str(Markup.escape(v))))
+    env.tests["match_tel"] = lambda v: bool(re.fullmatch(r"\+?[0-9][0-9 ]{7,}", str(v).strip()))
+    env.tests["match_mail"] = lambda v: bool(re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]{2,}", str(v).strip()))
     env.globals.update(site=site, data=data, base=base, asset=asset, url=url, img=obr.img, img_url=obr.img_url,
                        og_url=og_url, jsonld=jsonld(site), titulek="", popis="", cesta="", noindex=False)
     stranky = []
@@ -202,13 +212,45 @@ def main():
         with open(vystup, "w", encoding="utf-8") as fh:
             fh.write(kod)
 
+    # fotky nahrané v administraci: originál i do dist kvůli náhledům v adminu + seznam pro „Vybrať z webu“
+    upl = os.path.join(IMG, "uploads")
+    if os.path.isdir(upl):
+        shutil.copytree(upl, os.path.join(DIST, "img", "uploads"), dirs_exist_ok=True)
+    kniznica = []
+    for kor, _, soubory in os.walk(IMG):
+        for s_ in sorted(soubory):
+            if s_.lower().endswith(RASTER):
+                rel = os.path.relpath(os.path.join(kor, s_), IMG).replace(os.sep, "/")
+                kniznica.append("img/" + rel if rel.startswith("uploads/") else rel)
+
+    # administrace (cache busting jako na webu)
+    adm = os.path.join(ROOT, "admin")
+    if os.path.isdir(adm):
+        shutil.copytree(adm, os.path.join(DIST, "admin"))
+        p = os.path.join(DIST, "admin", "index.html")
+        s_ = open(p, encoding="utf-8").read()
+        s_ = s_.replace("__V_ACSS__", hash_souboru(os.path.join(adm, "admin.css"))).replace("__V_AJS__", hash_souboru(os.path.join(adm, "admin.js")))
+        open(p, "w", encoding="utf-8").write(s_)
+        # originály pro náhledy v administraci (jen zdrojové fotky webu, ne nahrané – ty už v dist jsou)
+        orig = os.path.join(DIST, "admin", "orig")
+        os.makedirs(orig, exist_ok=True)
+        for rel in kniznica:
+            if not rel.startswith("img/uploads/"):
+                with Image.open(os.path.join(IMG, rel)) as im:
+                    im = ImageOps.exif_transpose(im)
+                    im.thumbnail((480, 480))
+                    if im.mode not in ("RGB", "RGBA"):
+                        im = im.convert("RGBA" if "A" in im.getbands() else "RGB")
+                    im.save(os.path.join(orig, os.path.splitext(rel)[0].replace("/", "-") + ".webp"), "WEBP", quality=78)
+        json.dump(sorted(kniznica, key=lambda x: (not x.startswith("img/uploads/"), x), reverse=False), open(os.path.join(DIST, "admin", "images.json"), "w"), ensure_ascii=False)
+
     # robots, sitemap, CNAME
     navrh = bool(site.get("navrh"))
     with open(os.path.join(DIST, "robots.txt"), "w") as fh:
         if navrh:
             fh.write("User-agent: *\nDisallow: /\n")
         else:
-            fh.write(f"User-agent: *\nAllow: /\n\nSitemap: {site['url']}sitemap.xml\n")
+            fh.write(f"User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: {site['url']}sitemap.xml\n")
     dnes = datetime.date.today().isoformat()
     with open(os.path.join(DIST, "sitemap.xml"), "w", encoding="utf-8") as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
@@ -218,6 +260,9 @@ def main():
     open(os.path.join(DIST, ".nojekyll"), "w").close()
     if site.get("domena") and not navrh:
         open(os.path.join(DIST, "CNAME"), "w").write(site["domena"] + "\n")
+    # pro administraci: který commit je nasazený
+    json.dump({"sha": os.environ.get("GITHUB_SHA", "local"), "built": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")},
+              open(os.path.join(DIST, "version.json"), "w"))
 
     print(f"OK: {len(stranky)} stránek, {len(obr.info)} obrázků -> dist/ ({'NÁVRH, noindex' if navrh else 'OSTRÝ WEB, indexovatelný'})")
 

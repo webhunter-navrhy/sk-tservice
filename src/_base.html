@@ -37,8 +37,9 @@
 </main>
 <footer class="paticka">
   <div class="wrap">
-    <p><strong>{{ site.nazev }}</strong> · IČO {{ site.ico }} · Višňová 36, 900 45 Malinovo</p>
+    <p><strong>{{ site.nazev }}</strong> · IČO {{ site.ico }} · {{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>
     <p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a> · <a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+    <p class="admin-odkaz"><a href="{{ base }}admin/" rel="nofollow">Administrácia</a></p>
   </div>
 </footer>
 <script src="{{ asset('js/main.js') }}" defer></script>

@@ -4,7 +4,7 @@ Neutrální základ bez designu. Design (koncept, typografie, barvy, layout) vym
 
     python3 build.py            # _data/*.json + src/*.html + img/ + static/  ->  dist/
     python3 build.py --serve    # + server na http://localhost:8765/<base>
-    ./deploy.sh [--dry|--bez-qa] # push (main = zdroje, gh-pages = dist), čekání na Pages, HTTP 200, qa.py
+    ./deploy.sh [--bez-qa]       # push main -> GitHub Action sestaví a nasadí Pages, čeká na version.json, qa.py
 
 Struktura: `_data/site.json` (firma, kontakt, base/url, `navrh`, formulář), `_data/*.json` (obsah, v šabloně `data.<soubor>`),
 `src/*.html` (Jinja2; `_base.html`, `_formular.html`; stránka `kontakt.html` -> `/kontakt/`), `img/` (zdrojové fotky), `static/` (css, js, fonty).
@@ -16,3 +16,12 @@ sitemap.xml, robots.txt, 404.html, `.nojekyll`. Formulář: `site.formular.demo=
 
 Pravidla: logo klienta vlevo v hlavičce (`site.logo` = soubor v `static/`), fonty self-host a test háčků, žádná vymyšlená čísla.
 `img/placeholder.jpg` je jen zástupná fotka, nahraď ji.
+
+## T SERVICE – administrace (10. 11. 2026)
+
+`/admin/` (odkaz „Administrácia“ v patičce) = sdílený backend webhunter-admin (Cloudflare Worker, id `sk-tservice`).
+Klient upravuje `_data/texty.json`, `sluzby.json`, `skupiny.json`, `galeria.json`, `tim.json` a kontakty v `site.json`
+(technická pole site.json admin nepřepíše). Nové fotky jdou do `img/uploads/RRRR-MM/*.webp`, uložení = commit do main,
+Action web přestaví (~1 min), admin to pozná podle `version.json`.
+Přihlášení jménem a heslem: backend ověřuje řetězec `meno:heslo` (jméno malými písmeny). Heslo není v repu.
+NENASTAVOVAT vlastní doménu ani CNAME, náhled běží na /sk-tservice/.

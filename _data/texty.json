@@ -1,0 +1,80 @@
+{
+ "hero": {
+  "stitok": "Konferencie · podujatia · tlmočnícka technika",
+  "nadpis": "Technické zabezpečenie vašich podujatí.",
+  "slogan": "Plánovanie bez stresu, perfektné prevedenie. Postaráme sa o detaily.",
+  "perex": "Ozvučenie, obrazovky, tlmočnícka technika, ISO kabíny, LED stena, hlasovacie zariadenie.",
+  "tlacitko": "Vyžiadať cenovú kalkuláciu",
+  "tlacitko2": "Čo vám zabezpečíme",
+  "normy": "Zariadenia zodpovedajú normám ISO 20109, ISO 2603, ISO 4043 a IEC 60914.",
+  "foto": "hero.jpg",
+  "alt": "Veľká sála s LED stenou a diskusným panelom, technika T SERVICE"
+ },
+ "o_nas": {
+  "stitok": "O nás",
+  "nadpis": "Poznáme väčšinu konferenčných priestorov.",
+  "odstavce": [
+   "Máme bohaté skúsenosti a poznáme väčšinu konferenčných priestorov. V súčasnosti preferovaný live streaming so záznamom zabezpečujeme pre viaceré renomované firmy.",
+   "Charakterizuje nás inovatívny prístup, trvalá orientácia na zákazníka a dôraz na kvalitu služieb, čo potvrdzujú mnohé referencie."
+  ],
+  "zaver": "Na základe vašich požiadaviek vám zašleme cenovú kalkuláciu."
+ },
+ "sluzby": {
+  "stitok": "Naše služby",
+  "nadpis": "Komplexné technické zabezpečenie"
+ },
+ "tlmocenie": {
+  "stitok": "Tlmočnícka technika",
+  "nadpis": "ISO kabíny a digitálne prijímače Taiden",
+  "odstavce": [
+   "Pre vaše podujatie môžeme použiť tlmočnícku techniku podľa vašich požiadaviek. Máme najnovšie ISO kabíny a digitálne tlmočnícke prijímače Taiden, ktoré patria medzi svetovú špičku.",
+   "Poskytujeme aj sprievodcovské tlmočnícke UHF zariadenia – šepták, s tlmočníckym vysielačom do ruky alebo na hlavu."
+  ],
+  "foto": "prijimac-taiden.jpg",
+  "alt": "Digitálny tlmočnícky prijímač Taiden"
+ },
+ "galeria": {
+  "stitok": "Galéria",
+  "nadpis": "Z podujatí, ktoré sme zabezpečovali"
+ },
+ "tim": {
+  "stitok": "Tím",
+  "nadpis": "Spoznajte náš tím"
+ },
+ "kontakt": {
+  "stitok": "Kontakt",
+  "nadpis": "Napíšte nám",
+  "text": "Cenovú kalkuláciu pripravíme na základe vašich požiadaviek.",
+  "bloky": [
+   {
+    "nadpis": "Zastúpenie Bratislava",
+    "riadky": [
+     "T SERVICE, spol. s r.o.",
+     "Višňová 36",
+     "900 45 Malinovo",
+     "+421 903 433 306",
+     "tservice@tservice.sk"
+    ]
+   },
+   {
+    "nadpis": "Technik Košice",
+    "riadky": [
+     "+421 903 433 316",
+     "tservice@tservice.sk"
+    ]
+   },
+   {
+    "nadpis": "Fakturačné údaje",
+    "riadky": [
+     "T SERVICE s.r.o.",
+     "Jozefa Hagaru 21",
+     "831 54 Bratislava",
+     "IČO 35935847",
+     "IČ DPH: SK 2022009561"
+    ]
+   }
+  ],
+  "google": "https://goo.gl/maps/fBU4MZY7JnPTg8dZ7",
+  "waze": "http://waze.to/?ll=48.126079,17.091828"
+ }
+}
