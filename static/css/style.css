@@ -29,8 +29,8 @@ h1{font-size:clamp(2.6rem,7vw,5.2rem)}h2{font-size:clamp(2.1rem,4.6vw,3.4rem)}h3
 .hlavicka nav a:hover,.hlavicka nav a:focus-visible{border-color:var(--cervena)}
 .tel{font:700 1.1rem 'Barlow Condensed',sans-serif;letter-spacing:.04em;text-decoration:none;background:var(--ink);color:#fff;padding:.55rem 1rem;white-space:nowrap}
 .tel:hover{background:var(--cervena)}
-/* Úvod v RAL 1005 (medovo žltá, rovnaký odtieň ako sekcie Služby a Kontakt), tmavý text – kontrast 6,8 : 1 */
-.hero{position:relative;background:var(--ral1005);color:var(--ink);overflow:hidden}
+/* Úvod na bielom pozadí (klient 10. 11. 2026), tmavý text */
+.hero{position:relative;background:#fff;color:var(--ink);overflow:hidden}
 .hero-mriezka{display:grid;gap:2.2rem;grid-template-columns:minmax(0,1fr);padding-top:clamp(2.4rem,5vw,4.5rem);padding-bottom:clamp(3rem,6vw,5rem);align-items:center}
 @media(min-width:60rem){.hero-mriezka{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:3.5rem}}
 .hero-obsah{position:relative;min-width:0}
