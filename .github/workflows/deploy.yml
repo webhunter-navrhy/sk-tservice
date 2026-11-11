@@ -5,8 +5,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -20,18 +18,6 @@ jobs:
           python-version: '3.12'
       - run: pip install jinja2 pillow markupsafe
       - run: python build.py
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
   kopie:
     # Další domény se stejným webem: stejný build s WH_DOMENA do kopií repa (seznam v domeny.json)
     needs: build
@@ -50,9 +36,9 @@ jobs:
           python - <<'PY' > kopie.txt
           import json
           for k in json.load(open('domeny.json')).get('kopie', []):
-              print(k['domena'], k['repo'])
+              print(k['domena'], k['repo'], k.get('vetev', 'main'))
           PY
-          while read -r dom repo; do
-            [ -n "$dom" ] && tools/publikuj_kopii.sh "$dom" "$repo"
+          while read -r dom repo vetev; do
+            [ -n "$dom" ] && tools/publikuj_kopii.sh "$dom" "$repo" "$vetev"
           done < kopie.txt
           true

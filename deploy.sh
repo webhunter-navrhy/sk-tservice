@@ -3,7 +3,7 @@
 # Stejnou cestou ukládá administrace /admin/ (webhunter-admin commitne _data/*.json a img/uploads/…).
 #   ./deploy.sh            # build lokálně (kontrola), commit, push, počkat na Action, ověřit version.json, QA
 #   ./deploy.sh --bez-qa
-# Domény: hlavní tlmocnickatechnika.sk (Pages tohoto repa), další viz domeny.json + tools/publikuj_kopii.sh.
+# Domény: web běží na kopiích repa (domeny.json), publikuje je Action; Pages tohoto repa jsou vypnuté.
 set -euo pipefail
 cd "$(dirname "$0")"
 QA=1; for a in "$@"; do [ "$a" = "--bez-qa" ] && QA=0; done
@@ -23,8 +23,6 @@ git add -A
 git -c user.name="WebHunter" -c user.email="info@webhunter.cz" commit -q -m "Aktualizace webu $(date +%F\ %H:%M)" || echo "(nic nového)"
 git push -q "$PUSH_URL" HEAD:main
 SHA="$(git rev-parse HEAD)"
-echo "== Pages přes Actions"
-gh api "repos/$REPO/pages" --jq .build_type 2>/dev/null | grep -q workflow || gh api -X PUT "repos/$REPO/pages" -f build_type=workflow >/dev/null
 echo "== čekám na nasazení $SHA"
 V=""
 for i in $(seq 1 60); do

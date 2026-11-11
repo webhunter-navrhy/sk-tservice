@@ -1,4 +1,5 @@
 {
-  "hlavni": "tlmocnickatechnika.sk",
-  "kopie": []
+  "kopie": [
+    {"domena": "tlmocnickatechnika.sk", "repo": "webhunter-navrhy/sk-tlmocnickatechnika", "vetev": "gh-pages"}
+  ]
 }
