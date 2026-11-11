@@ -3,7 +3,7 @@
 # Stejnou cestou ukládá administrace /admin/ (webhunter-admin commitne _data/*.json a img/uploads/…).
 #   ./deploy.sh            # build lokálně (kontrola), commit, push, počkat na Action, ověřit version.json, QA
 #   ./deploy.sh --bez-qa
-# NIKDY nenastavovat vlastní doménu ani CNAME (10. 11. 2026 tservice.sk přesměrovávala náhled na rozbitý starý web).
+# Domény: hlavní tlmocnickatechnika.sk (Pages tohoto repa), další viz domeny.json + tools/publikuj_kopii.sh.
 set -euo pipefail
 cd "$(dirname "$0")"
 QA=1; for a in "$@"; do [ "$a" = "--bez-qa" ] && QA=0; done

@@ -154,6 +154,12 @@ def jsonld(site):
 def main():
     data = nacti_data()
     site = data["site"]
+    # Víc domén z jednoho zdroje: WH_DOMENA=<domena> přepíše url/domena/base (ostrý web, base '/'), viz domeny.json
+    if os.environ.get("WH_DOMENA"):
+        site["domena"] = os.environ["WH_DOMENA"].strip().lower()
+        site["url"] = f"https://{site['domena']}/"
+        site["base"] = "/"
+        site["navrh"] = False
     base = site.get("base", "/")
     if not base.startswith("/") or not base.endswith("/"):
         raise BuildError("site.base musí začínat a končit lomítkem (např. /slug/ nebo /)")

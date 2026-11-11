@@ -24,4 +24,10 @@ Klient upravuje `_data/texty.json`, `sluzby.json`, `skupiny.json`, `galeria.json
 (technická pole site.json admin nepřepíše). Nové fotky jdou do `img/uploads/RRRR-MM/*.webp`, uložení = commit do main,
 Action web přestaví (~1 min), admin to pozná podle `version.json`.
 Přihlášení jménem a heslem: backend ověřuje řetězec `meno:heslo` (jméno malými písmeny). Heslo není v repu.
-NENASTAVOVAT vlastní doménu ani CNAME, náhled běží na /sk-tservice/.
+Ostrý web: hlavní doména tlmocnickatechnika.sk (CNAME, Pages tohoto repa). Další domény (tservice.sk, konferencnatechnika.sk) = kopie repa, viz „Víc domén“.
+
+## Víc domén z jednoho zdroje (11. 11. 2026)
+GitHub Pages umí jednu vlastní doménu na repo, klient chce tři samostatné domény bez přesměrování. Zdroj a administrace zůstávají jen tady (`sk-tservice`).
+Každý push do main (i z administrace) spustí Action: job `build` nasadí hlavní doménu, job `kopie` pro každý řádek `domeny.json` sestaví stejný web
+(`WH_DOMENA=<domena> python build.py` → url, canonical, sitemap, CNAME se přepíšou) a pošle ho do kopie repa (Pages z větve main). Secret `MIRROR_TOKEN` = GitHub token.
+Přidání domény jedním krokem (po DNS na GitHub): `~/wh-navrhy-ops/tools/pridat_domenu.sh sk-tservice <domena>`.

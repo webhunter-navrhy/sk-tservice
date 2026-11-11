@@ -32,3 +32,27 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+  kopie:
+    # Další domény se stejným webem: stejný build s WH_DOMENA do kopií repa (seznam v domeny.json)
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install jinja2 pillow markupsafe
+      - name: Publikovat kopie
+        env:
+          GH_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: |
+          python - <<'PY' > kopie.txt
+          import json
+          for k in json.load(open('domeny.json')).get('kopie', []):
+              print(k['domena'], k['repo'])
+          PY
+          while read -r dom repo; do
+            [ -n "$dom" ] && tools/publikuj_kopii.sh "$dom" "$repo"
+          done < kopie.txt
+          true
