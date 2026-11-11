@@ -24,7 +24,7 @@ Klient upravuje `_data/texty.json`, `sluzby.json`, `skupiny.json`, `galeria.json
 (technická pole site.json admin nepřepíše). Nové fotky jdou do `img/uploads/RRRR-MM/*.webp`, uložení = commit do main,
 Action web přestaví (~1 min), admin to pozná podle `version.json`.
 Přihlášení jménem a heslem: backend ověřuje řetězec `meno:heslo` (jméno malými písmeny). Heslo není v repu.
-Ostrý web běží na kopiích repa (tlmocnickatechnika.sk, později tservice.sk a konferencnatechnika.sk), viz „Víc domén“. Pages tohoto repa jsou vypnuté, vlastní doménu zde nenastavovat.
+Ostrý web běží na kopiích repa (tlmocnickatechnika.sk, později tservice.sk a konferencnatechnika.sk), viz „Víc domén“. Pages tohoto repa se nepoužívají (github.io/sk-tservice je starý náhled), vlastní doménu zde nenastavovat.
 
 ## Víc domén z jednoho zdroje (11. 11. 2026)
 GitHub Pages umí jednu vlastní doménu na repo, klient chce tři samostatné domény bez přesměrování. Zdroj a administrace zůstávají jen tady (`sk-tservice`).

@@ -3,7 +3,7 @@
 # Stejnou cestou ukládá administrace /admin/ (webhunter-admin commitne _data/*.json a img/uploads/…).
 #   ./deploy.sh            # build lokálně (kontrola), commit, push, počkat na Action, ověřit version.json, QA
 #   ./deploy.sh --bez-qa
-# Domény: web běží na kopiích repa (domeny.json), publikuje je Action; Pages tohoto repa jsou vypnuté.
+# Domény: web běží na kopiích repa (domeny.json), publikuje je Action; Pages tohoto repa se nepoužívají.
 set -euo pipefail
 cd "$(dirname "$0")"
 QA=1; for a in "$@"; do [ "$a" = "--bez-qa" ] && QA=0; done
