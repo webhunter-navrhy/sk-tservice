@@ -1,5 +1,14 @@
 {
   "kopie": [
-    {"domena": "tlmocnickatechnika.sk", "repo": "webhunter-navrhy/sk-tlmocnickatechnika", "vetev": "gh-pages"}
+    {
+      "domena": "tlmocnickatechnika.sk",
+      "repo": "webhunter-navrhy/sk-tlmocnickatechnika",
+      "vetev": "gh-pages"
+    },
+    {
+      "domena": "tservice.sk",
+      "repo": "webhunter-navrhy/sk-tservice-sk",
+      "vetev": "main"
+    }
   ]
 }
