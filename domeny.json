@@ -9,6 +9,11 @@
       "domena": "tservice.sk",
       "repo": "webhunter-navrhy/sk-tservice-sk",
       "vetev": "main"
+    },
+    {
+      "domena": "konferencnatechnika.sk",
+      "repo": "webhunter-navrhy/sk-tservice-konferencna",
+      "vetev": "main"
     }
   ]
 }
